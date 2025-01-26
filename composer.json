@@ -1,0 +1,30 @@
+{
+    "name": "albarslan01/currencytostring",
+    "description": "A Laravel package that converts currency numbers to words",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "albarslan01",
+            "email": "your.email@example.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0|^8.1|^8.2|^8.3",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Albarslan01\\CurrencyToString\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Albarslan01\\CurrencyToString\\CurrencyServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
