@@ -1,12 +1,13 @@
 {
     "name": "albarslan01/currencytostring",
-    "description": "A Laravel package that converts currency numbers to words",
+    "version": "1.0.0",
+    "description": "Multi language standalone PHP number to words converter. Fully tested, open for extensions and new languages.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "albarslan01",
-            "email": "your.email@example.com"
+            "email": "albarslan01@gmail.com"
         }
     ],
     "require": {
