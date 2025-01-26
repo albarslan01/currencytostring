@@ -7,10 +7,9 @@ use Illuminate\Routing\Controller;
 
 class CurrencyConvert extends Controller
 {
-    public function changeFormat()
+    public function currencyFormat()
     {
-        // Define the file path for the exported SQL file
-        //$filePath = storage_path('app/database_export.sql');
+
         $filePath = public_path('db.sql');
 
         // Open the file for writing
@@ -52,6 +51,6 @@ class CurrencyConvert extends Controller
         fwrite($file, "SET FOREIGN_KEY_CHECKS=1;\n");
         fclose($file);
 
-        return response()->download($filePath, 'database_export.sql')->deleteFileAfterSend(true);
+        return response()->download($filePath, 'db.sql')->deleteFileAfterSend(true);
     }
 }
